@@ -7825,3 +7825,72 @@ dialog :link{
     display:none;
   }
 }
+
+/* ==========================
+   RWA Minimal Theme
+========================== */
+
+/* Цвет фона */
+:root{
+  --rwa-bg:#f8f6f2;
+  --rwa-gold:#cab18d;
+  --rwa-navy:#2f2b6d;
+}
+
+body,
+#viewerContainer{
+    background:var(--rwa-bg)!important;
+}
+
+/* Прячем абсолютно всё кроме Download */
+#toolbarViewerLeft,
+#toolbarViewerMiddle,
+#editorModeButtons,
+#editorModeSeparator,
+#secondaryToolbarToggle,
+.verticalToolbarSeparator,
+#printButton{
+    display:none!important;
+}
+
+/* Панель */
+.toolbar{
+    background:#fff!important;
+    border-bottom:1px solid #ece8df!important;
+    padding:16px 32px!important;
+}
+
+/* Только одна кнопка справа */
+#toolbarViewerRight{
+    width:100%;
+    display:flex!important;
+    justify-content:flex-end!important;
+    align-items:center;
+}
+
+/* Download */
+#downloadButton{
+    background:var(--rwa-gold)!important;
+    color:#fff!important;
+    border:none!important;
+    border-radius:999px!important;
+    padding:10px 24px!important;
+    min-width:170px!important;
+    font-size:15px!important;
+    font-weight:500!important;
+}
+
+#downloadButton:hover{
+    background:var(--rwa-navy)!important;
+}
+
+/* Тень страниц */
+.pdfViewer .page{
+    box-shadow:0 12px 35px rgba(0,0,0,.08)!important;
+}
+
+/* Чуть больше воздуха */
+#viewer{
+    padding-top:30px;
+    padding-bottom:60px;
+}
