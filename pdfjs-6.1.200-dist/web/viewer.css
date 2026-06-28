@@ -7894,3 +7894,34 @@ body,
     padding-top:30px;
     padding-bottom:60px;
 }
+/* ===========================
+   RWA Search Button
+=========================== */
+
+#viewFindButton{
+    display:flex !important;
+    align-items:center;
+    justify-content:center;
+
+    width:42px !important;
+    height:42px !important;
+
+    border-radius:999px !important;
+    border:1px solid #cab18d !important;
+    background:#ffffff !important;
+
+    margin-right:12px !important;
+}
+
+#viewFindButton:hover{
+    background:#f8f6f2 !important;
+}
+
+/* Красивое окно поиска */
+
+#findbar{
+    background:#ffffff !important;
+    border-radius:16px !important;
+    box-shadow:0 10px 30px rgba(0,0,0,.08) !important;
+    padding:10px 14px !important;
+}
